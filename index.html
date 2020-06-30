@@ -11,11 +11,35 @@
         <link rel="stylesheet" media="all" href="css2.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <style>
-            .forum_posts_entry {font-size:18px !important;}
+            .forum_posts_entry {
+                font-size:18px !important;
+            }
+            
+            .btn {
+                background-color: #efefef;
+                color: #000000;
+                font-size: 16px;
+                border: 1px solid #2e6da4;
+                border-radius: 4px;
+                line-height: 1.3333333;
+                cursor: pointer;
+            }
+
+            .btn-to-top {
+                position: fixed;
+                right: 100px;
+                bottom: 5px;
+                z-index: 99;
+            }
         </style>
     </head>
     <body style="padding-top:0px;" class="classic three_column forum_threads world_of_warcraft">
         <div id="">
+            
+            <form action="#contents">
+                <input type="submit" value="to index" class="btn btn-to-top" />
+            </form>
+            
             <div id="" style="min-width:300px;max-width:1000px;margin: 0 auto;">
                 <div style="padding:0px;" id="main_content_container">
                     <div id="main_content">
